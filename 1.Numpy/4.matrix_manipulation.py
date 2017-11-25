@@ -28,6 +28,8 @@ print(a4)
 a5 = np.reshape(a2,(6,4))
 print(a5)
 
+# resize - https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.resize.html#numpy.resize
+# compare with reshape :)
 
 
 a1 = np.ones((3,3))
@@ -105,3 +107,31 @@ ab2 = np.stack((a,b),axis=2)
 print(ab2)
 print(ab2.shape)
 print(ab2[0,:,:])
+
+
+# Split an array into multiple sub-arrays. https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.split.html#numpy.split
+
+x = np.arange(15)
+xs= np.split(x, 3)
+print(xs)
+
+
+x = np.arange(8.0)
+xs = np.split(x, [3, 5, 6, 10])
+
+# Tile
+b = np.array([0, 1, 2])
+print(np.tile(b, 2))
+
+
+# tile 2x2
+#       |
+# ------|------
+#       |
+print(np.tile(b, (2, 2)))
+
+
+c = np.array([ [0, 1, 2], [3, 4, 5] ])
+print(c)
+print(np.tile(c,3))
+
