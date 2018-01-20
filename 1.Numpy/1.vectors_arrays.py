@@ -98,5 +98,6 @@ print(b1[:,0,:])
 print(b1[:,:,0].shape)
 print(b1[:,:,0])
 
-
 # play with indexes
+
+# 5,2,3
