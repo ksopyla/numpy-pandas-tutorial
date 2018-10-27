@@ -73,9 +73,20 @@ print(np.dot(x, y))
 
 x = np.array([[1,2],[3,4]])
 
+print(x)
 print(np.sum(x))  # Compute sum of all elements; prints "10"
 print(np.sum(x, axis=0))# Compute sum of each column; prints "[4 6]"
 print(np.sum(x, axis=1))  # Compute sum of each row; prints "[3 7]"
+
+
+print(np.mean(x))  # Compute mean of all elements;
+print(np.mean(x, axis=0))# Compute mean of each column;
+print(np.mean(x, axis=1))  # Compute mean of each row; 
+
+
+print(np.std(x))          # Compute standard derivation of all elements;
+print(np.std(x, axis=0))  # Compute standard derivation of each column;
+print(np.std(x, axis=1))  # Compute standard derivation of each row; 
 
 
 
@@ -90,3 +101,24 @@ v = np.array([1,2,3])
 print(v)  # Prints "[1 2 3]"
 print(v.T)  # Prints "[1 2 3]"
 
+
+# generate linear map from (-pi/2, pi/2)
+x = np.linspace(-np.pi/2,np.pi/2,10)
+
+# calculate sine and cosine in one step, for whole array
+print(np.sin(x))
+
+print(np.cos(x))
+
+# [-5, ... , 5]
+x = np.arange(-5,5)
+
+# calcultae e^(-5), .... , e^5
+print(np.exp(x))
+
+# calculate 2^-5 ... 2^5, !!! error, integer not allowed negative exponent
+print(np.power(2,x))
+
+# now everything works as expected :)
+x = np.arange(-5,5, dtype=np.float)
+print(np.power(2,x))
