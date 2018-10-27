@@ -116,9 +116,23 @@ x = np.arange(-5,5)
 # calcultae e^(-5), .... , e^5
 print(np.exp(x))
 
+# x^2, compute x to power of 2 
+print(np.power(x,2))
+
+# using python operators compute each element of matrix x to power of 2
+print(x**2)
+
 # calculate 2^-5 ... 2^5, !!! error, integer not allowed negative exponent
 print(np.power(2,x))
 
 # now everything works as expected :)
 x = np.arange(-5,5, dtype=np.float)
-print(np.power(2,x))
+
+# natural logarithm, look at minus values!!
+print(np.log(x))
+
+xx = np.power(2,x)
+print(xx)
+
+# logarithm base 2
+print(np.log2(xx))

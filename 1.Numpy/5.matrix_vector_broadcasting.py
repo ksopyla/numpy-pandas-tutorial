@@ -30,7 +30,7 @@ print(vv)                 # Prints "[[1 0 1]
                          #          [1 0 1]
                          #          [1 0 1]]"
 y = x + vv  # Add x and vv elementwise
-print(y)  # Prints "[[ 2  2  4
+print(y)  # Prints "[[ 2  2  4]
          #          [ 5  5  7]
          #          [ 8  8 10]
          #          [11 11 13]]"
