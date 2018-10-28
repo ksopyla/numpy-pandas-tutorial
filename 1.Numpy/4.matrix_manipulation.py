@@ -115,9 +115,11 @@ x = np.arange(15)
 xs= np.split(x, 3)
 print(xs)
 
-
+# split an array on those indexes
 x = np.arange(8.0)
 xs = np.split(x, [3, 5, 6, 10])
+print(xs)
+
 
 # Tile
 b = np.array([0, 1, 2])
