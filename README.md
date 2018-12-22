@@ -4,7 +4,7 @@ This is set of lessons which will teach you numpy and pandas basics. The aim of 
 
 ## Why I have created this course?
 
-In the beginning, it was created for teaching "Data Visualization Course" at [Departmnt of Computer Science of University of Warmia and Mauzury](http://wmii.uwm.edu.pl) but with time more people start to use it for self-learning. I have also used it for workshops and other courses. Then I have decided to improve it and share. The process of improving is constant so if you want to contribute do not hesitate
+In the beginning, it was created for teaching "Data Visualization Course" at [Department of Computer Science of University of Warmia and Mauzury](http://wmii.uwm.edu.pl) but with time more people start to use it for self-learning. I have also used it for workshops and other courses. Then I have decided to improve it and share. The process of improving is constant so if you want to contribute do not hesitate
 
 
 
