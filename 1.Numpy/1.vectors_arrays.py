@@ -42,6 +42,7 @@ a1 = np.array([1,2,3,4]) # Create a rank 1 array
 print("a1={}".format(a1))
 print(type(a1))            # Prints "<type 'numpy.ndarray'>"
 print("a1 shape={}".format(a1.shape))
+print(a1.dtype) # elements type
 
 #%%
 a2 = np.array([ [1,2,3,4], [5,6,7,8] ])
