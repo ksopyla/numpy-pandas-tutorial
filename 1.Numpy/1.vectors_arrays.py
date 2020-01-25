@@ -7,6 +7,14 @@
 import numpy as np
 
 
+ll = [1, 2, 3, 4, 5, 6]
+v0 = np.array(ll)
+print("v0={}".format(v0))
+
+print(type(v0))            # Prints "<type 'numpy.ndarray'>"
+print("v0 shape={}".format(v0.shape))
+print(v0.dtype) # elements type
+
 #%% vector creation
 v1 = np.arange(1,10)
 print("v1={}".format(v1))
