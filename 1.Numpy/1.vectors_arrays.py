@@ -1,8 +1,8 @@
 # author: Krzysztof Sopyła (krzysztofsopyla@gmail.com)
 # Twitter: ksopyla
-# Blog: http://ksopyla.com
+# Blog: https://ksopyla.com
 
-# If you want to use this material in your own trainning please let me know.
+# If you want to use this material in your own training please let me know.
 
 import numpy as np
 

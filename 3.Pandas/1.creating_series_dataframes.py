@@ -8,8 +8,10 @@ print(s)
 
 
 # Creating a DataFrame by passing a numpy array, with an index and labeled columns:
-dates = pd.date_range('20170101', periods=6)
-df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
+dates = pd.date_range('20170101', periods=6,freq="D")
+df = pd.DataFrame(np.random.randn(6,4), 
+                  index=dates, 
+                  columns=['imie','nazwisko','wiek','miasto'])
 
 
 
