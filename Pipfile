@@ -7,10 +7,11 @@ name = "pypi"
 matplotlib = "*"
 pandas = "*"
 numpy = "*"
+ipykernel = "*"
 
 [dev-packages]
 pylint = "*"
-ipykernel = "*"
+
 
 [requires]
 python_version = "3.7"

@@ -6,12 +6,16 @@
 
 # Numpy docs https://docs.scipy.org/doc/numpy-1.13.0/reference/routines.array-manipulation.html
 
+#%%
 import numpy as np
 
 
+#%%
 a1 = np.arange(0,24,step=1)
 print(a1)
 
+
+#%%
 # reshape matrix a1 into (2,12) matrix, 
 a2 = np.reshape(a1,(2,12))
 print(a2)
@@ -28,7 +32,7 @@ print(a4)
 a5 = np.reshape(a2,(6,4))
 print(a5)
 
-# resize - https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.resize.html#numpy.resize
+#%% resize - https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.resize.html#numpy.resize
 # compare with reshape :)
 
 
@@ -46,7 +50,7 @@ np.concatenate((a1,a2))
 np.concatenate((a1,a3), axis=1)
 
 
-# stack - Join a sequence of arrays along a new axis.
+#%% stack - Join a sequence of arrays along a new axis.
 #  https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.stack.html#numpy.stack
 
 v1 = np.arange(1,5)
@@ -59,7 +63,7 @@ vh = np.stack((v1,v2),axis=1)
 print(vv)
 print(vh)
 
-# stack in 3d
+#%% stack in 3d
 a = np.reshape(np.arange(1,9),(2,4))
 b = np.reshape(np.arange(1,9),(2,4))+10
 
@@ -79,7 +83,7 @@ print(ab0)
 print(ab0.shape)
 print(ab0[0,:,:])
 
-# one matrix behind another
+#%% one matrix behind another
 #         ____________
 #        |            |
 #  ______|_____       |
@@ -93,7 +97,7 @@ print(ab1)
 print(ab1.shape)
 print(ab1[0,:,:])
 
-# one matrix next to another
+#%% one matrix next to another
 #
 #    /|    /|
 #   / |   / |
@@ -109,7 +113,7 @@ print(ab2.shape)
 print(ab2[0,:,:])
 
 
-# Split an array into multiple sub-arrays. https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.split.html#numpy.split
+#%% Split an array into multiple sub-arrays. https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.split.html#numpy.split
 
 x = np.arange(15)
 xs= np.split(x, 3)
@@ -121,7 +125,7 @@ xs = np.split(x, [3, 5, 6, 10])
 print(xs)
 
 
-# Tile
+#%% Tile
 b = np.array([0, 1, 2])
 print(np.tile(b, 2))
 

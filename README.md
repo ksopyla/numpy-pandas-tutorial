@@ -1,6 +1,6 @@
 # Numpy and pandas tutorial for data data visualization in python.
 
-This is set of lessons which will teach you numpy and pandas basics. The aim of the course is to prapare you to visualize the data. You will learn how to
+This is set of lessons which will teach you numpy and pandas basics. The aim of the course is to prepare you to visualize the data. 
 
 ## Why I have created this course?
 
@@ -8,11 +8,10 @@ In the beginning, it was created for teaching "Data Visualization Course" at [De
 
 
 
-## Prerequisits:
+## Prerequisits
+
 * python 3 syntax: list, loops, functions
 * linear algebra fundamentals: vectos, matrix, matrix arithmetic (addition, multiplication)
-
-
 
 
 ## What 
@@ -30,3 +29,19 @@ Some pandas examples was takent from [10 minuts to pandas](https://pandas.pydata
 * Pandas
     * how to create dataframe
     * different ways to create dataframe
+
+
+## Setup
+
+Preferable OS: ubuntu 18.04
+
+* install python 3.7 (you can use pyenv)
+* install pipenv
+
+```
+mkdir Projects
+cd Projects
+git clone https://github.com/ksopyla/numpy-pandas-tutorial.git
+pipenv install
+```
+
