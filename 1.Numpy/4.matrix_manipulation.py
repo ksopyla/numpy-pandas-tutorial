@@ -20,11 +20,15 @@ print(a1)
 a2 = np.reshape(a1,(2,12))
 print(a2)
 
+
+#%%
 a1[0] = 12345
 print(a2)
 # assing correct value as was before
 a1[0] = 0
 
+
+#%%
 a3 = np.reshape(a2,(3,8))
 print(a3)
 a4 = np.reshape(a2,(4,6))
@@ -58,6 +62,7 @@ v2 = np.arange(5,9)
 print(v1)
 print(v2)
 
+#%%
 vv = np.stack((v1,v2),axis=0)
 vh = np.stack((v1,v2),axis=1)
 print(vv)
@@ -67,7 +72,7 @@ print(vh)
 a = np.reshape(np.arange(1,9),(2,4))
 b = np.reshape(np.arange(1,9),(2,4))+10
 
-
+#%%
 # one matrix on top of another
 #    ___________
 #   /          /
@@ -119,8 +124,8 @@ x = np.arange(15)
 xs= np.split(x, 3)
 print(xs)
 
-# split an array on those indexes
-x = np.arange(8.0)
+#%% split an array on those indexes
+x = np.arange(15)
 xs = np.split(x, [3, 5, 6, 10])
 print(xs)
 
@@ -130,14 +135,17 @@ b = np.array([0, 1, 2])
 print(np.tile(b, 2))
 
 
-# tile 2x2
+#%% tile 2x2
 #       |
 # ------|------
 #       |
 print(np.tile(b, (2, 2)))
 
 
+#%%
 c = np.array([ [0, 1, 2], [3, 4, 5] ])
 print(c)
 print(np.tile(c,3))
 
+
+# %%

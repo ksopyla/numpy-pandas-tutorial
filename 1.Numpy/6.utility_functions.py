@@ -5,9 +5,9 @@
 
 #todo:
 
-- sorting
-- argsort
-- argmax
+# - sorting
+# - argsort
+# - argmax
 
 #%% sorting
 a = np.array([[1,4],[3,1]])

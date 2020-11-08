@@ -8,11 +8,15 @@ import numpy as np
 x = np.array([1, 2])  # Let numpy choose the datatype
 print( x.dtype)         # Prints "int64"
 
-x = np.array([1.0, 2.0])  # Let numpy choose the datatype
+x = np.array([1., 2.])  # Let numpy choose the datatype
 print( x.dtype)             # Prints "float64"
 
-x = np.array([1, 2], dtype=np.int64)  # Force a particular datatype
-print( x.dtype)       
+x = np.array([1, 127], dtype=np.int8)  # Force a particular datatype
+print(x.dtype)       
+
+#%%
+x = np.array([1, 128], dtype=np.int8)  # Force a particular datatype
+print(x)       
 
 
 
@@ -30,6 +34,7 @@ print(np.add(x, y))
 # [[-4.0 -4.0]
 #  [-4.0 -4.0]]
 print(x - y)
+
 print(np.subtract(x, y))
 
 #%% Elementwise product; both produce the array
@@ -43,6 +48,10 @@ print(np.multiply(x, y))
 #  [ 0.42857143  0.5       ]]
 print(x / y)
 print(np.divide(x, y))
+
+
+#%% 
+# list of math functions https://numpy.org/doc/stable/reference/routines.math.html
 
 #%% Elementwise square root; produces the array
 # [[ 1.          1.41421356]
@@ -73,6 +82,7 @@ print(np.dot(x, y))
 
 
 
+#%%
 x = np.array([[1,2],[3,4]])
 
 print(x)
@@ -81,24 +91,25 @@ print(np.sum(x, axis=0))# Compute sum of each column; prints "[4 6]"
 print(np.sum(x, axis=1))  # Compute sum of each row; prints "[3 7]"
 
 
+#%%
 print(np.mean(x))  # Compute mean of all elements;
 print(np.mean(x, axis=0))# Compute mean of each column;
 print(np.mean(x, axis=1))  # Compute mean of each row; 
 
-
+#%%
 print(np.std(x))          # Compute standard derivation of all elements;
 print(np.std(x, axis=0))  # Compute standard derivation of each column;
 print(np.std(x, axis=1))  # Compute standard derivation of each row; 
 
 
-
+#%%
 x = np.array([[1,2], [3,4]])
 print(x)    # Prints "[[1 2]
            #          [3 4]]"
 print(x.T)  # Prints "[[1 3]
            #          [2 4]]"
 
-# Note that taking the transpose of a rank 1 array does nothing:
+#%% Note that taking the transpose of a rank 1 array does nothing:
 v = np.array([1,2,3])
 print(v)  # Prints "[1 2 3]"
 print(v.T)  # Prints "[1 2 3]"
@@ -115,10 +126,10 @@ print(np.cos(x))
 # [-5, ... , 5]
 x = np.arange(-5,5)
 
-# calcultae e^(-5), .... , e^5
+#%% calcultae e^(-5), .... , e^5
 print(np.exp(x))
 
-# x^2, compute x to power of 2 
+#%% x^2, compute x to power of 2 
 print(np.power(x,2))
 
 # using python operators compute each element of matrix x to power of 2

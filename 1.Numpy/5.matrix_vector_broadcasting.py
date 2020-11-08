@@ -1,6 +1,6 @@
 # based on http://cs231n.github.io/python-numpy-tutorial/
 
-#%
+#%%
 import numpy as np
 
 #%% We will add the vector v to each row of the matrix x,
@@ -30,6 +30,7 @@ print(vv)                 # Prints "[[1 0 1]
                          #          [1 0 1]
                          #          [1 0 1]
                          #          [1 0 1]]"
+#%%
 y = x + vv  # Add x and vv elementwise
 print(y)  # Prints "[[ 2  2  4]
          #          [ 5  5  7]
