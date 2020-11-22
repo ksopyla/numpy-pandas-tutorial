@@ -1,12 +1,13 @@
-
+#%%
 
 import pandas as pd
 import numpy as np
 
 # Creating a DataFrame by passing a numpy array, with an index and labeled columns:
-dates = pd.date_range('20170101', periods=6)
+dates = pd.date_range('20200101', periods=6)
 df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
 
+#%%
 
 ## Selection
 df['A']
@@ -20,12 +21,12 @@ df.loc[dates[0]]
 df.loc[:,['A','B']]
 
 # you can use slicing on index
-df.loc['20170102':'20170104',['A','B']]
+df.loc['20200102':'20200104',['A','B']]
 
 # if you want particular value
 df.loc[dates[0],'A']
 
-# Selection by Position
+#%% Selection by Position
 
 # choose third row
 df.iloc[3]

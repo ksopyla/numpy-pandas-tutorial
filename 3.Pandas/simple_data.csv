@@ -1,0 +1,9 @@
+Imie,Nazwisko,wiek,adres
+a,b,1,
+a,b,2, "foo"
+c,cc,11, "baz"
+d,a,11, "bar"
+e,bb,-23, "bor"
+d,dd,-3,
+e,ee,12,"hoho"
+
