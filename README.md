@@ -48,4 +48,5 @@ pipenv install
 ## Resources
 
 * [https://cupy.dev/](https://cupy.dev/) - NumPy/SciPy-compatible Array Library for GPU-accelerated Computing with Python
+* [https://www.dask.org/](https://www.dask.org/) - Dask makes it easy to scale the Python libraries that you know and love like NumPy, pandas, and scikit-learn
 
