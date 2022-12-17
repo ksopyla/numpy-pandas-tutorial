@@ -45,3 +45,7 @@ git clone https://github.com/ksopyla/numpy-pandas-tutorial.git
 pipenv install
 ```
 
+## Resources
+
+* [https://cupy.dev/](https://cupy.dev/) - NumPy/SciPy-compatible Array Library for GPU-accelerated Computing with Python
+
